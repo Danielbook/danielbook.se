@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 
 ReactDOM.render((
     <Router history={browserHistory}>
+      {/*<Favicon url={[url1, url2, url3]}/>*/}
         <Route path="/" component={Layout}>
             <IndexRoute component={Homepage}/>
             <Route path="/projects" component={Projects}/>

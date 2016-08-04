@@ -3,33 +3,44 @@
 @import "themes/default/master";
 
 $orange: #FF7F00;
-$grey: #333;
-
-a, a:visited {
-	text-decoration: none;
-
-	&:hover{
-      color: $orange;
-      text-decoration: none;
-      -webkit-transition: color 0.3s ease-in-out;
-      -moz-transition: color 0.3s ease-in-out;
-      -ms-transition: color 0.3s ease-in-out;
-      -o-transition: color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out;
-	}
-
-	&.active{
-      color: $orange;
-      text-decoration: none;
-    }
-
-}
+$nav-grey: #777;
+$background-white: #FBFBFB;
+$line-grey: #999;
 
 body {
   position: relative;
   margin:30px;
   font-size: 16px;
   color:#222;
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+    color:$nav-grey;
+
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    .line {
+      border-color: $orange;
+    }
+  }
+
+  &.active{
+    text-decoration: none;
+    color:$nav-grey;
+    .line {
+      border-color: $orange;
+    }
+  }
+  &.visited{
+    color:$nav-grey;
+  }
 }
 
 h1 {
@@ -53,51 +64,44 @@ img {
   max-width: 100%;
 }
 
-#center{
-  text-align: center;
-}
 .center{
   text-align: center;
 }
+
 .tab-content{
   padding-top:70px;
 }
+
 .img-responsive{
   max-width: 15vw;
   margin: auto;
 }
+
 .content-box{
   max-width: 1000px;
   margin: auto;
   padding-top: 30px;
 }
+
 .container-fluid{
-  background-color: #FBFBFB;
+  background-color: $background-white;
 }
-.link{
-  color:#FF7F00;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
+
 .front-img{
   min-width:170px;
 }
-.link:hover{
-  color:#222;
-}
+
 .left{
   text-align: left;
 }
+
 .right{
   text-align: right;
 }
 
 .navigation{
   font-family: 'Poiret One', cursive;
-  color:#777;
+  color:$nav-grey;
   font-size: 2.5vw;
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
@@ -111,4 +115,14 @@ img {
   max-width: 1000px;
   margin: auto;
   padding-top: 30px;
+}
+
+.line{
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  -ms-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border-color: $line-grey;
+
 }
