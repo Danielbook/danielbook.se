@@ -4,15 +4,13 @@ import Header from "./Header";
 require('../../scss/style.scss');
 
 export default class Layout extends React.Component {
-
-    render() {
-        return (
-            <div>
-                <Header />
-                    {this.props.children}
-                <Footer />
-            </div>
-        );
-    }
-    
+  render() {
+    return (
+      <div>
+        <Header />
+          {this.props.children}
+        <Footer />
+      </div>
+    );
+  }
 }
