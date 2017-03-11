@@ -1,10 +1,12 @@
 import React from "react";
-import { Grid } from 'react-bootstrap';
+
+//TODO redo contact info
 
 export default class Contact extends React.Component {
   render() {
     return (
-      <Grid>
+      <div>
+        <h1>Contact</h1>
         <div className="row center animated fadeIn">
           <div className="col-xs-6 hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
             <a href="mailto:hello@danielbook.se" className="hi-icon">
@@ -57,7 +59,7 @@ export default class Contact extends React.Component {
             </div>
           </div>
         </div>
-      </Grid>
+      </div>
     );
   }
 
