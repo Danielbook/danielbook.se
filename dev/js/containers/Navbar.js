@@ -1,11 +1,8 @@
-import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux';
-import {updateActive} from '../actions/index.js';
-
-import {Fixed, Toolbar, NavItem, Space} from 'rebass';
-
-
-import Scroll from 'react-scroll';
+import React, {Component, PropTypes} from "react";
+import {connect} from "react-redux";
+import {updateActive} from "../actions/index.js";
+import {Fixed, Toolbar, NavItem, Space} from "rebass";
+import Scroll from "react-scroll";
 var Link = Scroll.Link;
 
 class Navbar extends Component {
@@ -26,52 +23,51 @@ class Navbar extends Component {
 
     return (
       <Fixed top left right zIndex={1}>
-      <Toolbar>
-        <Space auto />
-        <NavItem>
-          <Link
-            to="home"
-            activeClass="test"
-            onSetActive={(className) => this.handleActiveClass(className)}
-            spy={true}
-            smooth={true}
-            duration={1000}>
-            Home
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="projects"
-                activeClass="test"
-                onSetActive={(className) => this.handleActiveClass(className)}
-                spy={true}
-                smooth={true}
-                duration={1000}>
-            Projects
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link
-            to="photography"
-            activeClass="test"
-            onSetActive={(className) => this.handleActiveClass(className)}
-            spy={true}
-            smooth={true}
-            duration={1000}>
-            Photography
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link
-            to="contact"
-            activeClass="test"
-            onSetActive={(className) => this.handleActiveClass(className)}
-            spy={true}
-            smooth={true}
-            duration={1000}>
-            Contact
-          </Link>
-        </NavItem>
-      </Toolbar>
+        <Toolbar>
+          <Space auto/>
+          <NavItem>
+            <Link
+              to="home"
+              activeClass="test"
+              onSetActive={(className) => this.handleActiveClass(className)}
+              spy={true}
+              smooth={true}
+              duration={1000}>
+              Home
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="about"
+                  activeClass="test"
+                  onSetActive={(className) => this.handleActiveClass(className)}
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+              About
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="projects"
+                  activeClass="test"
+                  onSetActive={(className) => this.handleActiveClass(className)}
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+              Projects
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link
+              to="photography"
+              activeClass="test"
+              onSetActive={(className) => this.handleActiveClass(className)}
+              spy={true}
+              smooth={true}
+              duration={1000}>
+              Photography
+            </Link>
+          </NavItem>
+        </Toolbar>
       </Fixed>
     );
   }

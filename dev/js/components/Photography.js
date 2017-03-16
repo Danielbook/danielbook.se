@@ -1,5 +1,5 @@
 import React from "react";
-
+import {PageHeader} from "rebass";
 //TODO Add images from portfolio
 
 export default class Photography extends React.Component {
@@ -7,11 +7,13 @@ export default class Photography extends React.Component {
     super(props);
   }
 
-
   render() {
     return (
       <div>
-        <h1>Photography</h1>
+        <PageHeader
+          my={1}
+          heading='Photography'
+          description='' />
       </div>
     );
   }
