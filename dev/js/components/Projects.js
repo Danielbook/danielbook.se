@@ -3,7 +3,6 @@ import {Flex, Box} from "reflexbox";
 
 import Github from "react-icons/lib/go/mark-github";
 import Laptop from "react-icons/lib/fa/laptop";
-import Video from "react-icons/lib/fa/youtube";
 
 import {PageHeader, Embed, Card, CardImage, Heading, Text, Space, NavItem} from "rebass";
 
