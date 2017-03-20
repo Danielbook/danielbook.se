@@ -1,7 +1,7 @@
 {
-  "name": "react-router-lessons",
-  "version": "1.0.1",
-  "description": "Boilerplate for React webpack build.",
+  "name": "danielbook.se",
+  "version": "1.0.0",
+  "description": "Personal portfolio page",
   "main": "app.js",
   "scripts": {
     "dev": "webpack",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buckyroberts/React-Webpack.git"
+    "url": "https://github.com/Danielbook/danielbook.se"
   },
-  "author": "",
+  "author": "Daniel Book",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/buckyroberts/React-Webpack/issues"
+    "url": "https://github.com/Danielbook/danielbook.se/issues"
   },
-  "homepage": "https://github.com/buckyroberts/React-Webpack#readme",
+  "homepage": "http://danielbook.se",
   "dependencies": {
     "classnames": "latest",
     "css-loader": "^0.23.1",
