@@ -19,8 +19,6 @@ var Element = Scroll.Element;
 
 const store = createStore(rootReducer, initialState, window.devToolsExtension && window.devToolsExtension());
 
-//TODO add waypoint for scrollspy
-
 class App extends React.Component {
   getChildContext() {
     return {
