@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
 
-    entry: './dev/js/entry.js',
+    entry: './dev/js/index.js',
     devServer: {
         inline: true,
         contentBase: './src',
