@@ -25,7 +25,6 @@ class Navbar extends Component {
       <Fixed top left right zIndex={1}>
         <Toolbar>
           <Space auto/>
-          <NavItem>
             <Link
               to="home"
               activeClass="test"
@@ -35,8 +34,6 @@ class Navbar extends Component {
               duration={1000}>
               Home
             </Link>
-          </NavItem>
-          <NavItem>
             <Link to="about"
                   activeClass="test"
                   onSetActive={(className) => this.handleActiveClass(className)}
@@ -45,8 +42,6 @@ class Navbar extends Component {
                   duration={1000}>
               About
             </Link>
-          </NavItem>
-          <NavItem>
             <Link to="projects"
                   activeClass="test"
                   onSetActive={(className) => this.handleActiveClass(className)}
@@ -55,8 +50,6 @@ class Navbar extends Component {
                   duration={1000}>
               Projects
             </Link>
-          </NavItem>
-          <NavItem>
             <Link
               to="photography"
               activeClass="test"
@@ -66,7 +59,6 @@ class Navbar extends Component {
               duration={1000}>
               Photography
             </Link>
-          </NavItem>
         </Toolbar>
       </Fixed>
     );

@@ -6,8 +6,6 @@ import Laptop from "react-icons/lib/fa/laptop";
 
 import {PageHeader, Embed, Card, CardImage, Heading, Text, Space, NavItem} from "rebass";
 
-//TODO Add projects from backend
-
 class Projects extends React.Component {
   constructor(props) {
     super(props);
