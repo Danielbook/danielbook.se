@@ -12,7 +12,6 @@ const Header = () => (
     backgroundImage='img/me3.jpg'>
     <Heading size={1} big children='Daniel Böök' />
     <Text children='M.Sc. student of Computer Science in Media Technology at LiU, attending my forth year'/>
-    <Text children='I am into programming, mainly web, apps and graphics'/>
   </Banner>
 );
 

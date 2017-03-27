@@ -1,5 +1,5 @@
 import React from "react";
-import {PageHeader} from "rebass";
+import {PageHeader, Text} from "rebass";
 
 const About = () => (
   <div>
@@ -7,6 +7,7 @@ const About = () => (
       my={1}
       heading='About'
       description='' />
+    <Text children='I am into programming, mainly web, apps and graphics'/>
   </div>
 );
 

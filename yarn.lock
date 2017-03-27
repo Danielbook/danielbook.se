@@ -48,6 +48,13 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
+aphrodite@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/aphrodite/-/aphrodite-0.5.0.tgz#a4b9a8902662395d2702e70ac7a2b4ca66f25703"
+  dependencies:
+    asap "^2.0.3"
+    inline-style-prefixer "^2.0.0"
+
 aproba@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.0.4.tgz#2713680775e7614c8ba186c065d4e2e52d1072c0"
@@ -91,7 +98,7 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-asap@~2.0.3:
+asap@^2.0.3, asap@~2.0.3:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"
 
@@ -925,6 +932,10 @@ bootstrap@^4.0.0-alpha.3:
     jquery ">=1.9.1"
     tether "^1.4.0"
 
+bowser@^1.0.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.6.0.tgz#37fc387b616cb6aef370dab4d6bd402b74c5c54d"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -1696,6 +1707,10 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
+get-node-dimensions@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/get-node-dimensions/-/get-node-dimensions-1.2.2.tgz#7a71e8624cf9e1ab74599bb05b7e5116e995e45b"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
@@ -1847,6 +1862,10 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
+hyphenate-style-name@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
+
 iconv-lite@~0.4.13:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
@@ -1905,6 +1924,13 @@ inherits@2.0.1:
 ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
+
+inline-style-prefixer@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-2.0.5.tgz#c153c7e88fd84fef5c602e95a8168b2770671fe7"
+  dependencies:
+    bowser "^1.0.0"
+    hyphenate-style-name "^1.0.1"
 
 interpret@^0.6.4:
   version "0.6.6"
@@ -2078,9 +2104,9 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
-jquery@>=1.9.1, jquery@^3.1.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
+jquery@>=1.9.1, jquery@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.0.tgz#3bdbba66e1eee0785532dddadb0e0d2521ca584b"
 
 js-base64@^2.1.9:
   version "2.1.9"
@@ -2229,7 +2255,7 @@ lodash.words@^3.0.0:
   dependencies:
     lodash._root "^3.0.0"
 
-lodash@^4.0.0, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.2.1:
+lodash@^4.0.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3023,6 +3049,13 @@ rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
+react-addons-css-transition-group@^15.3.0:
+  version "15.4.2"
+  resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.4.2.tgz#b7828834dfa14229fe07750e331e8a8cb6fb7745"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-addons-pure-render-mixin@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.4.2.tgz#a8433c71c45e2368503721921dc47bdaf1fbabcd"
@@ -3058,6 +3091,25 @@ react-icons@^2.2.3:
   dependencies:
     react-icon-base "2.0.4"
 
+react-images@~0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/react-images/-/react-images-0.5.2.tgz#e1d537f9bcc71b8ba46b8d3ec984e0ee2ffd641b"
+  dependencies:
+    aphrodite "^0.5.0"
+    react-addons-css-transition-group "^15.3.0"
+    react-scrolllock "^1.0.1"
+
+react-measure@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/react-measure/-/react-measure-1.4.6.tgz#db3f91bf819922933cc9af34664d098d3242a955"
+  dependencies:
+    get-node-dimensions "^1.2.0"
+    resize-observer-polyfill "^1.4.1"
+
+react-photo-gallery@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/react-photo-gallery/-/react-photo-gallery-5.3.0.tgz#8bded5598e7578976a6c5a584b87c29dfeff3e98"
+
 react-photoswipe@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-photoswipe/-/react-photoswipe-1.2.0.tgz#e296e1150ed153bb2ddbc7222165291c13fe4e8c"
@@ -3080,6 +3132,10 @@ react-scroll@latest:
   resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.4.5.tgz#33b2b3f6d7abb9615d2bf4d1959ebc777bb3e789"
   dependencies:
     object-assign "^4.0.1"
+
+react-scrolllock@^1.0.1:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-scrolllock/-/react-scrolllock-1.0.5.tgz#66829739cf70e2380fd39b9b2f1215b059bcfa05"
 
 react-toolbox@^1.3.0:
   version "1.3.4"
@@ -3303,6 +3359,10 @@ require-main-filename@^1.0.1:
 requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+
+resize-observer-polyfill@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.4.1.tgz#db97349f0f5b29764ce3e03bf8982ddbfa076613"
 
 resolve@^1.1.6:
   version "1.2.0"
