@@ -1,6 +1,8 @@
+import { UPDATE_ACTIVE } from '../actions/index';
+
 const classReducer = (state = '', action) => {
   switch (action.type) {
-    case 'UPDATE_ACTIVE':
+    case UPDATE_ACTIVE:
       state = action.payload;
       break;
     default:

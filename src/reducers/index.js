@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import classReducer from './classReducer';
-import projectsReducer from './projectsReducer'
+import projectsReducer from './projectsReducer';
 
 const allReducers = combineReducers({
   activeClass: classReducer,

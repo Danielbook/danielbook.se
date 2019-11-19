@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, PanelHeader } from 'rebass';
+import { PanelHeader } from 'rebass';
 import $ from 'jquery';
 import _ from 'lodash';
 import Measure from 'react-measure';
@@ -40,6 +40,7 @@ export default class Photography extends React.Component {
       return;
     }
 
+    // TODO Make this happen with react redux and redux saga http://joelhooks.com/blog/2016/03/20/build-an-image-gallery-using-redux-saga
     $.ajax({
       url: `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=b6d8949723d54e4ec391890e19ea1e63&photoset_id=72157681672932415&user_id=113753265@N07&format=json&per_page=21&page=${this.state.pageNum}&extras=url_m,url_c,url_l,url_h,url_o`,
       dataType: 'jsonp',
@@ -88,6 +89,7 @@ export default class Photography extends React.Component {
       lightboxIsOpen: true,
     });
   }
+
   closeLightbox() {
     this.setState({
       currentImage: 0,

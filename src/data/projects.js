@@ -3,8 +3,17 @@ import procedural from '../img/procedural.png';
 import kulan from '../img/kulan.png';
 import domescape from '../img/domescape.png';
 import portfolio from '../img/portfolio.png';
+import spotplanner from '../img/spotplanner.png';
+import spotscaleCloud from '../img/spotscaleCloud.png';
 
 const projects = [
+  {
+    image: spotscaleCloud,
+    type: 'webpage',
+    heading: 'Spotscale Cloud',
+    text: 'Summer and part time work for Spotscale 2017. Cloud service for users to upload images. Also a bit of UI and user management.',
+    link: 'https://cloud.spotscale.com/',
+  },
   {
     image: oklart,
     type: 'webpage',
@@ -14,12 +23,19 @@ const projects = [
     link: 'https://arcane-fortress-56134.herokuapp.com/',
   },
   {
-    image: procedural,
+    image: spotplanner,
     type: 'webpage',
-    heading: 'Procedural Planet',
-    text: "Procedural planets built using Three.js, as well as ashima's webgl-noise",
-    github: 'https://github.com/Danielbook/Planet-moon-and-sun',
-    link: 'https://danielbook.github.io/Planet-moon-and-sun/',
+    heading: 'Spotplanner',
+    text: 'Summer and part time work for Spotscale 2016. Helped in building some of the tools for Spotplanner',
+    link: 'http://spotplanner.spotscale.com/',
+  },
+  {
+    type: 'video',
+    heading: 'Lifting Log',
+    text: 'A minimalistic webb app for logging your workouts, project for the course TDDD27. Created with MongoDB, ExpressJS, React and NodeJS.  ',
+    github: 'https://github.com/Danielbook/liftinglog',
+    link: 'https://www.youtube.com/watch?v=wPLN9c6DJos',
+    embed: 'https://www.youtube.com/embed/wPLN9c6DJos',
   },
   {
     image: kulan,
@@ -30,10 +46,18 @@ const projects = [
     link: 'http://www.kulaniklappen.se',
   },
   {
+    image: procedural,
+    type: 'webpage',
+    heading: 'Procedural Planet',
+    text: "Procedural planets built using Three.js, as well as ashima's webgl-noise",
+    github: 'https://github.com/Danielbook/Planet-moon-and-sun',
+    link: 'https://danielbook.github.io/Planet-moon-and-sun/',
+  },
+  {
     image: domescape,
     type: 'app',
     heading: 'Domescape',
-    text: 'Landscape with realtime position of the sun created in OpenGL and SGCT for viewing in a dome',
+    text: 'Landscape with real time position of the sun created in OpenGL and SGCT for viewing in a dome',
     github: 'https://github.com/Danielbook/Domescape',
     link: '',
   },
@@ -45,7 +69,6 @@ const projects = [
     link: 'https://www.youtube.com/watch?v=crZpxgsYBw8',
     embed: 'https://www.youtube.com/embed/crZpxgsYBw8',
   },
-
   {
     image: portfolio,
     type: 'webpage',

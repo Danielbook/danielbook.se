@@ -3,7 +3,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { Container, Provider as RebassProvider } from 'rebass';
 import Scroll from 'react-scroll';
-
 import initialState from '../initialState';
 import rootReducer from '../reducers/index';
 import Navbar from '../containers/Navbar';
@@ -11,9 +10,9 @@ import Header from './Header';
 import About from './About';
 import Projects from './Projects';
 import Photography from './Photography';
-import biblio from '../biblio';
 
 const Element = Scroll.Element;
+
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
@@ -28,7 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <RebassProvider theme={biblio}>
+        <RebassProvider>
           <Navbar />
           <Element name="home">
             <Header />

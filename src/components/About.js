@@ -41,7 +41,7 @@ const cols = [
 
 const texts = [
   'Hi! My name is Daniel and I have recently started my fifth and final year at M.Sc in Media technology.',
-  'I am currently looking for a place to do my master thesis, so if you are interested in a forward thinking and hard working guy with a passion for programming, do not hesitate to send me an email or reach out to me in one of the social media platforms below. My main interests lie in the realm of information visualization, but also recently in machine learning and AI-programming',
+  'My main interests lie in the realm of programming(mainly web and graphics), information visualization, but also recently in machine learning and AI-programming',
   'Photography is also a passion of mine, mainly in portraiture and landscape. Check out some of my photos down below.',
 ];
 /* eslint-disable react/no-array-index-key */
@@ -53,7 +53,7 @@ const About = () => (
     </PanelHeader>
 
     {texts.map((text, n) => (
-      <Text key={n} center>
+      <Text key={n}>
         {text}
       </Text>
     ))}

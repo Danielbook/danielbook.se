@@ -8,8 +8,14 @@ import { updateActive } from '../actions/';
 const Link = Scroll.Link;
 
 const CustomToolbar = styled(Toolbar)`
-  background-color: #333
-  `;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .25)
+`;
+
+const CustomNavLink = styled(NavLink)`
+  font-family: "Avenir", sans-serif;
+  color: #333;
+`;
 
 class Navbar extends Component {
   constructor() {
@@ -34,63 +40,61 @@ class Navbar extends Component {
     const topClass = activeClass === 'top' ? 'active' : 'inactive';
 
     return (
-      <div>
-        <Fixed top left right z={1}>
-          <CustomToolbar>
-            <NavLink ml="auto" is="span">
-              <Link
-                to="home"
-                activeClass="test"
-                onSetActive={className => this.handleActiveClass(className)}
-                spy
-                smooth
-                duration={1000}
-              >
+      <Fixed top left right z={1}>
+        <CustomToolbar>
+          <CustomNavLink f={[1, 2, 3]} ml="auto" is="span">
+            <Link
+              to="home"
+              activeClass="test"
+              onSetActive={className => this.handleActiveClass(className)}
+              spy
+              smooth
+              duration={1000}
+            >
                 Home
-              </Link>
-            </NavLink>
-            <NavLink is="span">
-              <Link
-                to="about"
-                activeClass="test"
-                onSetActive={className => this.handleActiveClass(className)}
-                spy
-                smooth
-                offset={-48}
-                duration={1000}
-              >
+            </Link>
+          </CustomNavLink>
+          <CustomNavLink f={[1, 2, 3]} is="span">
+            <Link
+              to="about"
+              activeClass="test"
+              onSetActive={className => this.handleActiveClass(className)}
+              spy
+              smooth
+              offset={-48}
+              duration={1000}
+            >
                 About
-              </Link>
-            </NavLink>
-            <NavLink is="span">
-              <Link
-                to="projects"
-                activeClass="test"
-                onSetActive={className => this.handleActiveClass(className)}
-                spy
-                smooth
-                offset={-48}
-                duration={1000}
-              >
+            </Link>
+          </CustomNavLink>
+          <CustomNavLink f={[1, 2, 3]} is="span">
+            <Link
+              to="projects"
+              activeClass="test"
+              onSetActive={className => this.handleActiveClass(className)}
+              spy
+              smooth
+              offset={-48}
+              duration={1000}
+            >
                 Projects
-              </Link>
-            </NavLink>
-            <NavLink is="span">
-              <Link
-                to="photography"
-                activeClass="test"
-                onSetActive={className => this.handleActiveClass(className)}
-                spy
-                smooth
-                offset={-48}
-                duration={1000}
-              >
+            </Link>
+          </CustomNavLink>
+          <CustomNavLink f={[1, 2, 3]} is="span">
+            <Link
+              to="photography"
+              activeClass="test"
+              onSetActive={className => this.handleActiveClass(className)}
+              spy
+              smooth
+              offset={-48}
+              duration={1000}
+            >
                 Photography
-              </Link>
-            </NavLink>
-          </CustomToolbar>
-        </Fixed>
-      </div>
+            </Link>
+          </CustomNavLink>
+        </CustomToolbar>
+      </Fixed>
     );
   }
 }
